@@ -18,7 +18,13 @@ const styles = {
 const AuthorsList = ({ authors, onSelect }) => (
   <div style={{ backgroundColor: 'grey', minHeight: 300 }}>
 		{
-			authors.map(x => <p onClick={()=>(onSelect(x))} style={styles.authorBox}>{x}</p>)
+			authors.map(name =>
+				<p
+					onClick={()=>(onSelect(name))}
+					style={styles.authorBox}>
+						{name}
+				</p>
+			)
 		}
   </div>
 )
@@ -43,8 +49,14 @@ class Parent extends React.PureComponent {
 	render() {
 		return (
 			<div style={styles.container}>
-				<AuthorsList onSelect={this.select} authors={authorsLists}/>
-				<AuthorDetail author={this.state.name} quote={authors[this.state.name]} />
+
+				<AuthorsList
+					onSelect={this.select}
+					authors={authorsLists}/>
+
+				<AuthorDetail
+					author={this.state.name}
+					quote={authors[this.state.name]} />
 			</div>);
 	}
 }

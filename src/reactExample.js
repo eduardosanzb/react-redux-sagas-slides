@@ -21,10 +21,10 @@ const AuthorsList = ({ authors }) => (
   </div>
 )
 
-const AuthorDetail = ({ author }) => (
+const AuthorDetail = ({ author, quote }) => (
   <div>
     <h1 style={styles.heading}>
-      The author {author.name} said "{author.quote}"
+      {author} said: "{quote}"
 		</h1>
   </div>
 )
@@ -32,7 +32,7 @@ const AuthorDetail = ({ author }) => (
 render(
 	<div style={styles.container}>
 		<AuthorsList authors={['Pepe Mujica', 'Edu Galeano', 'Gabo Marquez']}/>
-		<AuthorDetail author={{name: 'Edu Galeano', quote:'Work to live!' }} />
+		<AuthorDetail author="Edu Galeano" quote="Work to live!" />
 	</div>
 )
 `
