@@ -103,7 +103,7 @@ export default class Presentation extends React.Component {
         <Slide
           transitionIn={['zoom', 'fade']}
           transitionOut={['slide', 'fade']}>
-          <img src={images.kat.replace('/', '')} margin="0px auto 40px" />
+          <img src={images.kat} margin="0px auto 40px" />
           <Heading size={2} caps fit textColor="secondary" textFont="primary">
             Wait what?
           </Heading>
@@ -128,7 +128,7 @@ export default class Presentation extends React.Component {
           <Heading size={6} caps fit textColor="tertiary">
             How does it works? Components
           </Heading>
-          <Image src={images.example.replace('/', '')} margin="0px auto 40px" />
+          <Image src={images.example} margin="0px auto 40px" />
         </Slide>
         <Slide
           transitionIn={['zoom', 'fade']}
@@ -156,7 +156,7 @@ export default class Presentation extends React.Component {
           <Heading size={2} caps fit textColor="secondary" textFont="primary">
             How does react works?
           </Heading>
-          <Image src={images.react1.replace('/', '')} margin="0px auto 40px" />
+          <Image src={images.react1} margin="0px auto 40px" />
         </Slide>
         <Slide
           transitionIn={['zoom', 'fade']}
@@ -164,7 +164,7 @@ export default class Presentation extends React.Component {
           <Heading size={2} caps fit textColor="secondary" textFont="primary">
             In other perspective
           </Heading>
-          <Image src={images.react0.replace('/', '')} margin="0px auto 40px" />
+          <Image src={images.react0} margin="0px auto 40px" />
         </Slide>
 
         <Slide
@@ -199,7 +199,7 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide>
-          <Image src={images.example.replace('/', '')} margin="0px auto 40px" />
+          <Image src={images.example} margin="0px auto 40px" />
         </Slide>
         <Slide
           transitionIn={['zoom', 'fade']}
@@ -213,14 +213,14 @@ export default class Presentation extends React.Component {
           <Heading size={3} textColor="secondary">
             Or
           </Heading>
-          <Image src={images.redux0.replace('/', '')} margin="0px auto 40px" />
+          <Image src={images.redux0} margin="0px auto 40px" />
         </Slide>
         <Slide transitionOut={['slide', 'fade']}>
           <Heading size={6} caps fit textColor="secondary">
             Here we also have a cycle!! 💪
           </Heading>
           <Image
-            src={images.redux1.replace('/', '')}
+            src={images.redux1}
             style={{ maxHeight: '25em' }}
           />
         </Slide>
@@ -230,7 +230,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <Appear>
             <Image
-              src={images.saga.replace('/', '')}
+              src={images.saga}
               style={{ maxHeight: '25em' }}
             />
           </Appear>
