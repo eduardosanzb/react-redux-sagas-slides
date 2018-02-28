@@ -1,13 +1,6 @@
 {
   "main.css": "static/css/main.653da357.css",
   "main.css.map": "static/css/main.653da357.css.map",
-  "main.js": "static/js/main.d5fe0976.js",
-  "main.js.map": "static/js/main.d5fe0976.js.map",
-  "static/media/containerOrComponent.png": "static/media/containerOrComponent.42df57c9.png",
-  "static/media/kat.png": "static/media/kat.95649f39.png",
-  "static/media/react0.png": "static/media/react0.333df309.png",
-  "static/media/react1.png": "static/media/react1.8dbeeb58.png",
-  "static/media/redux0.png": "static/media/redux0.cd35d8dc.png",
-  "static/media/redux1.png": "static/media/redux1.e5ed1b5b.png",
-  "static/media/saga.png": "static/media/saga.ddafe60c.png"
+  "main.js": "static/js/main.ad597670.js",
+  "main.js.map": "static/js/main.ad597670.js.map"
 }
