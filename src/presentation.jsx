@@ -30,22 +30,32 @@ import contextExample3 from './contextExample.3';
 // Require CSS
 require('normalize.css');
 
+// const images = {
+//   kat: require('./kat.png'),
+//   example: require('./containerOrComponent.png'),
+//   react0: require('./react0.png'),
+//   react1: require('./react1.png'),
+//   redux0: require('./redux0.png'),
+//   redux1: require('./redux1.png'),
+//   saga: require('./saga.png')
+// };
+
 const images = {
-  kat: require('./kat.png'),
-  example: require('./containerOrComponent.png'),
-  react0: require('./react0.png'),
-  react1: require('./react1.png'),
-  redux0: require('./redux0.png'),
-  redux1: require('./redux1.png'),
-  saga: require('./saga.png')
-};
+  kat: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/kat.png',
+  example: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/containerOrComponent.png',
+  react0: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/react0.png',
+  react1: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/react1.png',
+  redux0: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/redux0.png',
+  redux1: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/redux1.png',
+  redux1: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/redux1.png',
+  saga: 'https://raw.githubusercontent.com/eduardosanzb/react-redux-sagas-slides/master/src/saga.png',
+}
 
 const theme = createTheme(
   {
     primary: 'white',
     secondary: '#7c3d85',
     tertiary: 'black',
-    quartenary: '#CECECE'
   },
   {
     primary: 'Montserrat',
@@ -93,7 +103,7 @@ export default class Presentation extends React.Component {
         <Slide
           transitionIn={['zoom', 'fade']}
           transitionOut={['slide', 'fade']}>
-          <Image src={images.kat.replace('/', '')} margin="0px auto 40px" />
+          <img src={images.kat.replace('/', '')} margin="0px auto 40px" />
           <Heading size={2} caps fit textColor="secondary" textFont="primary">
             Wait what?
           </Heading>
@@ -160,6 +170,7 @@ export default class Presentation extends React.Component {
         <Slide
           transitionIn={['zoom', 'fade']}
           transitionOut={['slide', 'fade']}
+          progressColor="white"
           bgColor="primary">
           <Heading size={6} textColor="tertiary">
             Can we connect them?
